@@ -1,0 +1,81 @@
+.body {
+  background-image: url("/home/background-home-desktop.jpg");
+  width: 1440px;
+  height: 900px;
+}
+
+.title {
+  color: #fff;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  text-transform: uppercase;
+
+  margin: 24px 0px;
+  position: absolute;
+  top: 445px;
+  left: 165px;
+  // width: 445px;
+  height: 172px;
+}
+
+.subtitle {
+  color: #d0d6f9;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 387px;
+  left: 165.5px;
+  width: 385px;
+  height: 34px;
+}
+
+.paragraph {
+  width: 444px;
+
+  color: #d0d6f9;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+
+  position: absolute;
+  top: 641px;
+  left: 165.5px;
+}
+
+.explore {
+  color: #0b0d17;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.exploreOval {
+  width: 274px;
+  height: 274px;
+
+  border-radius: 274px;
+  background: #fff;
+
+  position: absolute;
+  top: 495px;
+  left: 1001px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
