@@ -1,0 +1,38 @@
+.body {
+  background-image: url("/destination/background-destination-desktop.jpg");
+  width: 1440px;
+  height: 900px;
+}
+
+.subtitle {
+  position: absolute;
+  top: 212px;
+  left: 220.5px;
+}
+
+.subtitleNumber {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.725px;
+
+  opacity: 0.25;
+}
+
+.subtitleText {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+}
+
+.image {
+  position: absolute;
+  top: 343px;
+  left: 230px;
+}

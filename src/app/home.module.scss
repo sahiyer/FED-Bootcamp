@@ -79,3 +79,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.mainNavBarBackground {
+  position: absolute;
+  top: 40px;
+  left: 610px;
+  width: 830px;
+  height: 96px;
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainNavBar {
+}
