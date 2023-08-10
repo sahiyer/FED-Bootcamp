@@ -19,6 +19,7 @@
   letter-spacing: 4.725px;
 
   opacity: 0.25;
+  margin-right: 28px;
 }
 
 .subtitleText {
@@ -35,4 +36,96 @@
   position: absolute;
   top: 343px;
   left: 230px;
+}
+
+.destinationNavBar {
+  position: absolute;
+  top: 310px;
+  left: 832px;
+
+  padding: 0px;
+  margin-left: -25px; // Offsets nav item padding.
+}
+
+.destinationName {
+  color: #fff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 381px;
+  left: 832.5px;
+
+  margin: 0px 0px;
+}
+
+.destinationDescription {
+  color: #d0d6f9;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+
+  position: absolute;
+  top: 510px;
+  left: 832px;
+  width: 444px;
+}
+
+.avgDistanceHeader {
+  color: #d0d6f9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 721px;
+  left: 832.5px;
+}
+
+.avgDistance {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 750px;
+  left: 832.5px;
+}
+
+.travelTimeHeader {
+  color: #d0d6f9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 721px;
+  left: 1054.5px;
+}
+
+.travelTime {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 750px;
+  left: 1054.5px;
 }

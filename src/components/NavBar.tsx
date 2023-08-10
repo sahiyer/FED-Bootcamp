@@ -8,7 +8,7 @@ export default function NavBar({
   className,
 }: {
   data: { text: string; href: string }[];
-  className: string;
+  className?: string;
 }) {
   return (
     <>

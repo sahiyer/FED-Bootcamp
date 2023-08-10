@@ -29,6 +29,13 @@ export default function Destination({ params }: { params: { slug: string } }) {
     { text: "03 Technology", href: "/" },
   ];
 
+  const destinationNavItems = [
+    { text: "Moon", href: "/destination/Moon" },
+    { text: "Mars", href: "/destination/Mars" },
+    { text: "Europa", href: "/destination/Europa" },
+    { text: "Titan", href: "/destination/Titan" },
+  ];
+
   // We only take the first element, but there should only be one.
   const currentData = data.destinations.filter((object) => object.name == params.slug)[0];
 
@@ -39,8 +46,10 @@ export default function Destination({ params }: { params: { slug: string } }) {
       </div>
 
       <div className={styles.subtitle}>
-        <span className={clsx(styles.subtitleNumber, barlowCondensed)}>01</span>
-        <span className={clsx(styles.subtitleText, barlowCondensed)}>Pick your destination</span>
+        <span className={clsx(styles.subtitleNumber, barlowCondensed.className)}>01</span>
+        <span className={clsx(styles.subtitleText, barlowCondensed.className)}>
+          Pick your destination
+        </span>
       </div>
 
       <Image
@@ -50,6 +59,19 @@ export default function Destination({ params }: { params: { slug: string } }) {
         width={445}
         height={445}
       ></Image>
+
+      <NavBar data={destinationNavItems} className={styles.destinationNavBar}></NavBar>
+
+      <h1 className={clsx(styles.destinationName, bellefair.className)}>{currentData.name}</h1>
+      <p className={clsx(styles.destinationDescription, barlow.className)}>
+        {currentData.description}
+      </p>
+
+      <p className={clsx(styles.avgDistanceHeader, barlowCondensed.className)}>Avg. Distance</p>
+      <p className={clsx(styles.avgDistance, bellefair.className)}>{currentData.distance}</p>
+
+      <p className={clsx(styles.travelTimeHeader, barlowCondensed.className)}>Est. Travel Time</p>
+      <p className={clsx(styles.travelTime, bellefair.className)}>{currentData.travel}</p>
     </body>
   );
 }
