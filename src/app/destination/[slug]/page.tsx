@@ -1,7 +1,7 @@
 "use client";
 
 import NavBar from "@/components/NavBar";
-import { barlow, barlowCondensed, bellefair } from "@/utils/fonts";
+import { barlow, barlowCondensed, bellefair, comicNeue } from "@/utils/fonts";
 import clsx from "clsx";
 import homeStyles from "../../home.module.scss";
 import styles from "./destination.module.scss";
@@ -46,8 +46,8 @@ export default function Destination({ params }: { params: { slug: string } }) {
       </div>
 
       <div className={styles.subtitle}>
-        <span className={clsx(styles.subtitleNumber, barlowCondensed.className)}>01</span>
-        <span className={clsx(styles.subtitleText, barlowCondensed.className)}>
+        <span className={clsx(styles.subtitleNumber, comicNeue.className)}>01</span>
+        <span className={clsx(styles.subtitleText, comicNeue.className)}>
           Pick your destination
         </span>
       </div>
@@ -62,7 +62,7 @@ export default function Destination({ params }: { params: { slug: string } }) {
 
       <NavBar data={destinationNavItems} className={styles.destinationNavBar}></NavBar>
 
-      <h1 className={clsx(styles.destinationName, bellefair.className)}>{currentData.name}</h1>
+      <h1 className={clsx(styles.destinationName, comicNeue.className)}>{currentData.name}</h1>
       <p className={clsx(styles.destinationDescription, barlow.className)}>
         {currentData.description}
       </p>

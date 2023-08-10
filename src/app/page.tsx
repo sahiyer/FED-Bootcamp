@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import styles from "./home.module.scss";
 import NavBar from "@/components/NavBar";
-import { barlow, barlowCondensed, bellefair } from "@/utils/fonts";
+import { barlow, barlowCondensed, bellefair, comicNeue } from "@/utils/fonts";
 
 export default function Home() {
   const navItems = [
@@ -17,11 +17,9 @@ export default function Home() {
         <NavBar data={navItems} className={styles.mainNavBar}></NavBar>
       </div>
 
-      <h2 className={clsx(barlowCondensed.className, styles.subtitle)}>
-        So, you want to travel to
-      </h2>
+      <h2 className={clsx(comicNeue.className, styles.subtitle)}>So, you want to travel to</h2>
 
-      <h1 className={clsx(bellefair.className, styles.title)}>Space</h1>
+      <h1 className={clsx(comicNeue.className, styles.title)}>Space</h1>
 
       <p className={clsx(barlow.className, styles.paragraph)}>
         Let’s face it; if you want to go to space, you might as well genuinely go to outer space and
